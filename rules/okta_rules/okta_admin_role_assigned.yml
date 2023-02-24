@@ -12,7 +12,7 @@ Tags:
 Reports:
   MITRE ATT&CK:
     - TA0004:T1078
-Severity: Info
+Severity: Low
 Description: A user has been granted administrative privileges in Okta
 Reference: https://help.okta.com/en/prod/Content/Topics/Security/administrators-admin-comparison.htm
 Runbook: Reach out to the user if needed to validate the activity
