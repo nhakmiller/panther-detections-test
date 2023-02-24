@@ -6,6 +6,8 @@ ADMIN_PATTERN = re.compile(r"[aA]dministrator")
 
 
 def rule(event):
+    if event.get("p_source_label") == 'Okta - Dev':
+        return False
     return (
         event.get("eventType", None) == "user.account.privilege.grant"
         and deep_get(event, "outcome", "result") == "SUCCESS"
